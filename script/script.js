@@ -1,5 +1,3 @@
-'use strict';
-
 // map and array to create the equivalent of a bi-dirctional map
 const moves = new Map();
 moves.set("rock", 0)
@@ -18,7 +16,7 @@ function computerPlay() {
   return Math.floor(Math.random() * 3)
 }
 
-// retry function for future prompting
+// retry function for future promptings
 function retry(tryAgain) {
   if (tryAgain.trim().toLowerCase() == "yes") {
     lossCounter = 0
