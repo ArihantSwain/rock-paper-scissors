@@ -16,7 +16,8 @@ function computerPlay() {
 function play() {
   let decision = window.prompt("Welcome! \nIn a game of rock, paper, scissors, you choose option in which: \nscissors beats paper, paper beats rock, rock beats scissors. \n\nThough simple, it can be hard. \nGet ready to play against the ultimate AI...! \n\nEnter your choice for round one of five.")
   let numComputerChoice = computerPlay()
-  let numUserChoice = moves.get(decision.trim().toLowerCase())
+  let numUserChoice = decision.toLowerCase()
+  numUserChoice = moves.get(decision.trim())
   if (numUserChoice == undefined) {
     alert("You entered a non-reliable value, round counted as a tie.")
     round++;
@@ -57,7 +58,7 @@ function game() {
     alert("You beat the ultimate AI!")
   } else if (winCounter < lossCounter) {
     let tryAgain = window.prompt("You lost to the AI... try again?")
-    if (tryAgain.trim().toLowerCase() == "yes") {
+    if (tryAgain.toLowerCase() == "yes") {
       lossCounter = 0
       winCounter = 0
       round = 0
