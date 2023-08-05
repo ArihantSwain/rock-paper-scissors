@@ -60,7 +60,7 @@ function play() {
     lossCounter++;
   }
 
-  alert("You " + outcome + " round " + round + "! \nComputer Choice: " + movesToString[numComputerChoice] + "\nYour Choice: " + movesToString[numUserChoice] + "\nYou've won " + winCounter + " games and lost " + lossCounter + " games!")
+  alert("You " + outcome + " round " + round + "! \nComputer Choice: " + movesToString[numComputerChoice] + "\nYour Choice: " + movesToString[numUserChoice] + "\nYou've won " + winCounter + " game(s) and lost " + lossCounter + " game(s)!")
 }
 
 // win condition is based on greater than less than logic unless specific case (user rock, computer scissors)
