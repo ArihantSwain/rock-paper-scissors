@@ -19,6 +19,8 @@ function play() {
   let numUserChoice = moves.get(decision.toLowerCase())
   if (numUserChoice == undefined) {
     alert("You entered a non-reliable value, restarting game...")
+    winCounter = 0
+    lossCounter = 0
     game()
     return
   }
