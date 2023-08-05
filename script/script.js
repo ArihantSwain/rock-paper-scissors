@@ -52,6 +52,7 @@ function play() {
 
   let outcome = checkWinCondition(numUserChoice, numComputerChoice)
   
+  // increment counters
   round++;
   if (outcome == "won") {
     winCounter++;
@@ -62,6 +63,7 @@ function play() {
   alert("You " + outcome + " round " + round + "! \nComputer Choice: " + movesToString[numComputerChoice] + "\nYour Choice: " + movesToString[numUserChoice] + "\nYou've won " + winCounter + " games and lost " + lossCounter + " games!")
 }
 
+// win condition is based on greater than less than logic unless specific case (user rock, computer scissors)
 function checkWinCondition(user, computer) {
   if (user == 0 && computer == 2) {
     return "won"
