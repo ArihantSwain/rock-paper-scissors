@@ -69,7 +69,7 @@ function game() {
       game()
     }
     else {
-      alert("Alright, good work!")
+      alert("Good job beating the ultimate AI!")
     }
   } else if (winCounter < lossCounter) {
     let tryAgain = window.prompt("You lost to the AI... try again?")
@@ -77,7 +77,7 @@ function game() {
       game()
     }
     else {
-      alert("Alright, good work!")
+      alert("A tie is nothing to scoff at, good work!")
     }
   } else {
     let tryAgain = window.prompt("You tied to the AI... try again?")
@@ -85,7 +85,7 @@ function game() {
       game()
     }
     else {
-      alert("Alright, good work!")
+      alert("Maybe you can win another time...")
     }
   }
 }
