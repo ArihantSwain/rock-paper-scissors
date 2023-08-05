@@ -14,7 +14,7 @@ function computerPlay() {
 }
 
 function play() {
-  let decision = window.prompt("Welcome! \nIn a game of rock, paper, scissors, you choose option in which: \nscissors beats paper, paper beats rock, rock beats scissors. \n\nThough simple, it can be hard. \nGet ready to play against the ultimate AI...! \n\nEnter your choice for round one of five.")
+  let decision = window.prompt("Welcome! \nIn a game of rock, paper, scissors, you choose an option in which: \nscissors beats paper, paper beats rock, rock beats scissors. \n\nThough simple, it can be hard. \n\nReady to play against the ultimate AI? \nEnter your choice for round one of five.")
   let numComputerChoice = computerPlay()
   let numUserChoice = moves.get(decision.trim().toLowerCase())
   if (numUserChoice == undefined) {
