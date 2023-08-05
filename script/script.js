@@ -18,10 +18,7 @@ function play() {
   let numComputerChoice = computerPlay()
   let numUserChoice = moves.get(decision.toLowerCase())
   if (numUserChoice == undefined) {
-    alert("You entered a non-reliable value, restarting game...")
-    winCounter = 0
-    lossCounter = 0
-    game()
+    alert("You entered a non-reliable value, round counted as a tie.")
     return
   }
   let outcome = checkWinCondition(numUserChoice, numComputerChoice)
@@ -62,6 +59,7 @@ function game() {
     if (tryAgain.toLowerCase() == "yes") {
       lossCounter = 0
       winCounter = 0
+      round = 0
       game()
     }
   } else {
