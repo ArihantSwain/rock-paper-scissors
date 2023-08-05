@@ -17,6 +17,11 @@ function play() {
   let decision = window.prompt("Choose rock, paper, or scissors!")
   let numComputerChoice = computerPlay()
   let numUserChoice = moves.get(decision.toLowerCase())
+  if (numUserChoice == undefined) {
+    alert("You entered a non-reliable value, restarting game...")
+    game()
+    return
+  }
   let outcome = checkWinCondition(numUserChoice, numComputerChoice)
   
   round++;
