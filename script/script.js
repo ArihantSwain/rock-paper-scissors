@@ -19,6 +19,7 @@ function play() {
   let numUserChoice = moves.get(decision.toLowerCase())
   if (numUserChoice == undefined) {
     alert("You entered a non-reliable value, round counted as a tie.")
+    round++;
     return
   }
   let outcome = checkWinCondition(numUserChoice, numComputerChoice)
